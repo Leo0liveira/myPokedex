@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #fceec8;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.left-content,
+.right-content {
+  flex-basis: 50%;
+}
+
+.left-content {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Ajustado para responsividade */
+  gap: 2rem; /* Espaçamento entre os cards */
+}
+
+.card {
+  background-color: #e6e6fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: transform 0.5s;
+}
+
+.card img {
+  height: 100px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.weight,
+.height {
+  font-size: 0.9rem;
+}
+
+.types {
+  display: flex;
+  gap: 8px;
+}
+
+.type {
+  background-color: #efefef;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+}
+
+.image-container {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.right-content {
+  background-color: #e6e6fa;
+  width: 20%;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  right: 100px;
+  border-radius: 8px;
+}
+
+.right-content h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.right-content img {
+  margin: 2rem;
+  height: 200px;
+}
+
+.skills {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.skills .group {
+  background-color: #b74555;
+  color: white;
+  padding: 0.5rem;
+  font-size: 12px;
+  border-radius: 8px;
+  margin-left: 1rem;
+  text-transform: capitalize;
+}
+
+.base-stat {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+.base-stat {
+  margin-top: 1rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.stat-name {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.stat-value {
+  margin-right: 10px;
+  width: 50px;
+  text-align: right;
+}
+
+.stat-progress {
+  height: 15px;
+  border-radius: 8px;
+}
+
+.stat-progress::-webkit-progress-bar {
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+.stat-progress::-webkit-progress-value {
+  background-color: #b74555;
+  border-radius: 8px;
+}
+
+.btn-group button {
+  outline: none;
+  border: none;
+  width: 150px;
+  padding: 0.3rem 0;
+  margin: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #b74555;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-group button:hover {
+  background-color: #a33344;
+}
+/* ----------- Pokemon Color Types ------------- */
+
+.type.grass {
+  background-color: #78c850;
+}
+.type.fire {
+  background-color: #f08030;
+}
+.type.water {
+  background-color: #6890f0;
+}
+.type.bug {
+  background-color: #a8b820;
+}
+.type.dark {
+  background-color: #705848;
+}
+.type.dragon {
+  background-color: #7038f8;
+}
+.type.electric {
+  background-color: #f8d030;
+}
+.type.fairy {
+  background-color: #ee99ac;
+}
+.type.fighting {
+  background-color: #c03028;
+}
+.type.flying {
+  background-color: #a890f0;
+}
+.type.ghost {
+  background-color: #705898;
+}
+.type.ground {
+  background-color: #e0c068;
+}
+.type.ice {
+  background-color: #98d8d8;
+}
+.type.normal {
+  background-color: #a8a878;
+}
+.type.poison {
+  background-color: #a040a0;
+}
+.type.psychic {
+  background-color: #f85888;
+}
+.type.rock {
+  background-color: #b8a038;
+}
+.type.steel {
+  background-color: #b8b8d0;
+}
